@@ -1,0 +1,91 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>Welcome!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- import socket.io-->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Sign-Up/Login</h1>
+    </header>
+    <div id="authentication">
+      Enter a username:
+      <input id="username" />
+      Enter a password:
+      <input type="password" id="password" />
+      <button id="SignUp">
+        Sign Up
+      </button>
+      <button id="login">
+        Login
+      </button>
+    </div>
+
+    <div id="activeUsers">
+        Active Users:
+     <span style="font-weight: 450"> <ul id="users"></ul></span>
+    </div>
+
+    <div class="content">
+      <div class="canvas-container">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <button id="startFlappyGame">
+          Start Game!
+        </button>
+        <p id="waitingroomtext">
+          You are currently in the waiting room because a game is in session.
+          You will join the game room, when the current game finishes.
+        </p>
+         <div id="youdiedtext">
+          YOU DIED! :(
+        </div>
+        <div id="countertext">
+        </div>
+  
+      </div>
+
+      <div id="currentgameLeaderboard">
+        <p>
+          Current Stats:
+        </p>
+        <ul id="currentgameLeaderboardscores"></ul>
+      </div>
+
+      <div id="allTimeLeaderboard">
+        <p>
+          All Time LeaderBoard:
+        </p>
+        <ul id="allTimeLeaderboardscores"></ul>
+      </div>
+
+      <div id="chatroom">
+        <p>
+          Chatroom:
+        </p>
+        <div id="chats">
+          <ul id="chatlist" maxlength="60"></ul>
+        </div>
+        <input id="chat" maxlength="60" />
+        <button id="submitbutton">Add Chat</button>
+      </div>
+    </div>
+  </body>
+</html>
