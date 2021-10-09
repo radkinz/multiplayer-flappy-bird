@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: sans-serif;
+    margin: 2em 1em;
+    line-height: 1.5em;
+    background-image: url("https://cdn.glitch.com/b7eb593f-7abf-4353-97ed-b139d4d95334%2F5373d86569bedd1a0fe00525.webp?v=1614662962789");
+    background-size: cover;
+}
+  
+h1 {
+    font-style: bold;
+    color: #000000;
+    max-width: calc(100% - 5rem);
+    line-height: 1.1;
+    border-radius: 5px;
+    text-shadow: 2px 2px 7px #ffdab3;
+}
+
+input {
+    border: 1px solid silver;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+  
+.canvas-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+  
+#canvas {
+    position: absolute;
+    background: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+  
+#startFlappyGame,
+#waitingroomtext,
+#youdiedtext,
+#nametag,
+#countertext {
+    position: absolute;
+    top: 50%;
+}
+  
+#startFlappyGame {
+    width: 30%;
+    left: 35%;
+}
+  
+#waitingroomtext {
+    color: #FFFFFF;
+    width: 50%;
+    overflow-wrap: break-word;
+    left: 25%;
+    top: 40%;
+}
+  
+#currentgameLeaderboard,
+#allTimeLeaderboard,
+#chatroom {
+    height: 500px;
+    background-color: rgb(200, 230, 255, 0.8);
+    overflow-y: auto;
+    margin: 0px 0px 15px 15px;
+    border-radius: 5px;
+}
+  
+#currentgameLeaderboard,
+#allTimeLeaderboard {
+    width: 250px;
+}
+  
+#chatroom {
+    width: 100%-600px;
+}
+  
+.content {
+    display: flex;
+}
+  
+#chatlist {
+    height: 320px;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+  
+p {
+    text-align: CENTER;
+    font-size: 20px;
+    font-weight: 600;
+}
+  
+#chat,
+#submitbutton {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+#submitbutton,
+#startFlappyGame,
+#SignUp,
+#login {
+    transition-duration: 0.4s;
+    font-size: 20px;
+    background-color: #ffe6cc;
+}
+  
+#authentication {
+    font-weight: 500;
+    font-size: 20px;
+}
+  
+#activeUsers {
+    font-weight: 600;
+    font-size: 20px;
+}
+  
+#youdiedtext {
+    color: #FFFFFF;
+    text-align: CENTER;
+    width: 500px;
+}
+  
+#allTimeLeaderboardscores {
+    list-style-type: upper-greek;
+}
+  
+#countertext {
+    color: #FFFFFF;
+    left: 10px;
+    top: 30px;
+    font-size: 20px;
+    font-weight: 550;
+}
+  
+#submitbutton:hover,
+#startFlappyGame:hover,
+#SignUp:hover,
+#login:hover {
+    background-color: #fff2e6;
+    cursor: pointer;
+}
+  
+#startFlappyGame:hover {
+     box-shadow: 0 7px 8px 0 white,
+      0 5px 5px 0 white;
+    background-color: #ffd9b3;
+}
+  
+#startFlappyGame {
+    font-size: 40px;
+    width: 250px;
+    top: 210px;
+    left: 125px;
+    border-radius: 9px;
+    border: none;
+}
