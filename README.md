@@ -7,3 +7,5 @@ A [node.js](https://nodejs.org/en/docs/) application that uses [Socket.io](https
 
 The web app begins with prompting the user to either sign-up or login. All user data (usernames, passwords, and high scores) are stored in a [SQLite3](https://www.npmjs.com/package/sqlite3) database.
 To maintain user privacy, the passwords are encrypted using [bcrypt](https://www.npmjs.com/package/bcrypt).
+
+![authentication img](/images/authentication.png)
